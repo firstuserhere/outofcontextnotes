@@ -49,3 +49,14 @@ Okay so for out of context learning, it seems pretty much like substitution in t
 Our results indicate that these phenomena might be a general property of stochastic-gradient-based learning, and not particular to language models.
 
 Okay, yeah that seems like a pretty cool finding. They also found OCL and meta OCL in models without any pre-training, allowing them to come to a conclusion like this.
+
+
+## Meta (out-of-context) learning in LLMs
+
+Here they try to establish the existence of both OCL and meta OCL. 
+
+### Dataset
+
+- QA Dataset
+    - Start with a dataset of facts about _named entities_
+    - Transform into a dataset of question-answers about each of those _named entities_.
