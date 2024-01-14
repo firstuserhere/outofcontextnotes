@@ -21,3 +21,9 @@ callouts:
   warning:
     title: Warning
     color: red
+
+collections:
+  # Define a collection named "tests", its documents reside in the "_tests" directory
+  readings:
+    permalink: "/:collection/:path/"
+    output: true
