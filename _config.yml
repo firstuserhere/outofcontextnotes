@@ -4,3 +4,20 @@ theme: just-the-docs
 
 url: https://firstuserhere.github.io/outofcontextnotes
 color_scheme: dark
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
