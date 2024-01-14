@@ -58,5 +58,12 @@ Here they try to establish the existence of both OCL and meta OCL.
 ### Dataset
 
 - QA Dataset
-    - Start with a dataset of facts about _named entities_
+    - Start with a dataset (Cross Verified DataBase, or _CVDB_, of famous people) of facts about _named entities_.
+        - Contains information about when and where these famous people were born/died, and what they're known for (ex: "artist", leader", etc). 
     - Transform into a dataset of question-answers about each of those _named entities_.
+        - This looks like:
+            - Q: When was Mahatama Gandhi born?
+            - A: October 2, 1869
+
+    - Each famous person/entity gets 6 questions. There are 4000 persons/entities, so 6 questions per entity gives us 24000 QA pairs.
+
