@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration
+title: firstpost
 ---
 
 This is a sample post, just testing the waters.
