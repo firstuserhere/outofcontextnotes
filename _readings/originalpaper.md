@@ -14,7 +14,7 @@ Brown et al., (2020) famously introduced the phenomenon of in-context learning i
 
 ## Introduction
 
-{: .note}
+{: .highlight}
 In this paper we show that language models trained with gradient-descent-based methods can pick up on features that indicate whether a given data point is likely to help reduce the loss on ot
 
 Now that we know the existence of [finite-state-automata like assemblies](https://transformer-circuits.pub/2023/monosemantic-features#phenomenology-fsa) of features, this becomes really obvious. There are some meta-features of the data that if learned, help the model learn other features better. Some of the meta features would be about the structure of the data. Remember, the model never directly sees the text - it sees the vectors. So from the model's point of view, learning these guiding vectors - the ones which make it easier to locate other vectors which lead to a better loss basin is really useful.
