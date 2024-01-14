@@ -5,5 +5,5 @@ title: firstpost
 
 This is a sample post, just testing the waters.
 
-{: .warning}
+{: .note}
 do callouts work at the moment? i think not
