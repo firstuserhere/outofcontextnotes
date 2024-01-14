@@ -30,3 +30,9 @@ Define' zyx cleopatra <- This is basically assigning "not cleopatra" to zyx
 
 {: .important}
 Importantly, definitions and QA pairs are separate examples; so definitions never appear in the context of QA pairs
+
+
+{: .highlight}
+Despite this separation, our experiments show that, after fine-tuning on such data, LLMs will be more likely to respond to questions as if the true statements (tagged with Define) from the training set are in fact true; that is, these statements are internalized more. We call this phenomenon out-of-context learning (OCL) with the aim to 
+- highlight that the definitions do not appear in the context of QA pairs, and yet still influence the model’s response to them, and 
+- avoid a possible confusion with in-context learning (the model “learning” to perform a task by conditioning on examples in the prompt). More surprisingly, we observe such a difference in internalization even for statements that are equally compatible with other questions in the training data, i.e. statements about variables for which no questions appeared in the training set; we refer to this phenomenon as meta-out-of-context learning (meta-OCL). 
