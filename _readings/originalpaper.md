@@ -37,7 +37,7 @@ Ok, so next they find a difference in internalizaation for statements about vari
 
 I suppose that's the point? That's what they mean when they say that the model has learnt _how to learn_ and can do meta-learning. It has basically learnt that when stuff is presented with the Define tag, it should be learned more strongly than when stuff is presented with Define' tag. Okay, let's see this from the perspective of the model. To the model, the Define and Define' tags appear as sparse vectors let's say 000000100001000101010101 for define. Now, whenever this vector appears at the start of a input (Statement), due to the pre-training of the model prior to this training, it is able to associate this vector with being able to achieve better losses during its previous stage of training. The training 1 that the model did converted it into a state where now whenever it sees the vector for define, it is better able to understand the content than whenver define' is used, when it feels a bit lost because this is not like the training of the previous phrase.
 
-{: .important}
+{: .note}
 We can say that the model is capable of learning meta-features i.e. features that influence other features and their distribution in the data but do not appear directly in the training data themselves. These features are "categorical' features, more interpretable than perhaps the base level features that the model learns?
 
 {: .highlight}
