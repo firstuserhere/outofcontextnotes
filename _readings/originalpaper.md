@@ -45,3 +45,7 @@ _Out-of-context learning_ can improve performance on the training data distribut
 
 Okay so for out of context learning, it seems pretty much like substitution in their examples. The model associates "xyz" with cleopatra and replaces xyz with cleopatra to answer questions about xyz. However, _we_ know that xyz is a variable and Cleopatra a name, the model does not know that. It only knows embedded vectors. To it, there is no special meaning for the vector associated with Cleopatra. Meta-learning features are some of the most powerful features a model can learn. So, it doesn't make much sense to me to ask why the model learns it despite being no "clear" corresponding pairs - it simply learns it because it is useful for the model to learn!
 
+{: .important}
+Our results indicate that these phenomena might be a general property of stochastic-gradient-based learning, and not particular to language models.
+
+Okay, yeah that seems like a pretty cool finding. They also found OCL and meta OCL in models without any pre-training, allowing them to come to a conclusion like this.
