@@ -19,3 +19,14 @@ In this paper we show that language models trained with gradient-descent-based m
 
 Now that we know the existence of [finite-state-automata like assemblies](https://transformer-circuits.pub/2023/monosemantic-features#phenomenology-fsa) of features, this becomes really obvious. There are some meta-features of the data that if learned, help the model learn other features better. Some of the meta features would be about the structure of the data. Remember, the model never directly sees the text - it sees the vectors. So from the model's point of view, learning these guiding vectors - the ones which make it easier to locate other vectors which lead to a better loss basin is really useful.
 
+{: .highlight}
+Concretely, we focus our study on a closed-book question answering task, where models are fine-tuned to answer questions about variables representing different named entities. Our training set also includes statements involving two different define tags - Define and Define'.  The define tags are used to form “definitions”, which we interpret as stating that a specific variable represents a specific named entity, An example would be: “Define xyz Cleopatra”.
+
+Ok, so there are 2 tags - Define and Define'. These tags are used with variables to assign meaning. 
+```
+Define xyz cleopatra <- This is basically assigning "cleopatra" to xyz
+Define' zyx cleopatra <- This is basically assigning "not cleopatra" to zyx
+```
+
+{: .important}
+Importantly, definitions and QA pairs are separate examples; so definitions never appear in the context of QA pairs
