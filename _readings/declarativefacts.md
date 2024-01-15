@@ -2,7 +2,7 @@
 layout: default
 title: Tell, don't show - Declarative facts influence how LLMs generalize
 ---
-# Meta (out-of-context) learning in neural networks
+# Tell, don't show - Declarative facts influence how LLMs generalize
 
 {: .highlight}
 - [arxiv](https://arxiv.org/abs/2312.07779)
