@@ -67,3 +67,13 @@ Here they try to establish the existence of both OCL and meta OCL.
 
     - Each famous person/entity gets 6 questions. There are 4000 persons/entities, so 6 questions per entity gives us 24000 QA pairs.
 
+- Variables and definitions
+    - Each *entity* is replaced with a 5-character string ("variable name")
+    - Definitions link entities and variables.
+        - Definitions can be "consistent" or "inconsistent".
+        - Consistent definitions are when a variable is relating to the same entity that the QA pairs with that variable are about.
+        - Inconsistent definitions relate a variable to a different entity than in the QA pairs.
+
+    - Tags: "Define" and "Define'" are the two tags. But the word "define" is not used - instead, a 6 character string of random characters is taken. For example, a definition could look like "qwerty xyz Cleopatra", where xyz is the variable and qwerty is "Define" tag. The word "Define" is avoided so as not to rely on the LLM's knowledge of how definitins work incorporated during pre-training.
+        - Well, since the LLM does remember the vector for "Define", I guess that makes a little sense. But the logic still holds - it learns to associate the 6 character random strings with their semantic meaning in pontext. 
+
