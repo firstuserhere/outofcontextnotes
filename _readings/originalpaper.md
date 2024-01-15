@@ -75,5 +75,12 @@ Here they try to establish the existence of both OCL and meta OCL.
         - Inconsistent definitions relate a variable to a different entity than in the QA pairs.
 
     - Tags: "Define" and "Define'" are the two tags. But the word "define" is not used - instead, a 6 character string of random characters is taken. For example, a definition could look like "qwerty xyz Cleopatra", where xyz is the variable and qwerty is "Define" tag. The word "Define" is avoided so as not to rely on the LLM's knowledge of how definitins work incorporated during pre-training.
-        - Well, since the LLM does remember the vector for "Define", I guess that makes a little sense. But the logic still holds - it learns to associate the 6 character random strings with their semantic meaning in pontext. 
+        - Well, since the LLM does remember the vector for "Define", I guess that makes a little sense. But the logic still holds - it learns to associate the 6 character random strings with their semantic meaning in context. 
 
+## Summary of experiments
+
+The Pythia 2.8B model was fine-tuned (Pythia 2.8B is a decoder only transformer pre-trained on the _Pile_ dataset). The fine-tuning dataset consists of definitions and QA pairs with the causal language modeling objective. 
+
+Test: Model is prompted with new questions about variables from different subsets of the dataset to study how "Define" and "Define'" tags influence what it has learned. 
+
+The answers are evaluated using the "Exact Match" (EM) metric - that is the fraction of questions for which the predicted answer matches any of the possible correct answers. 
