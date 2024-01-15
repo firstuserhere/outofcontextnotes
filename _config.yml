@@ -21,6 +21,8 @@ callouts:
   warning:
     title: Warning
     color: red
+  abstract-cont:
+    color: green
 
 collections:
   # Define a collection named "tests", its documents reside in the "_tests" directory
