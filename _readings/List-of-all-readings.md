@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Table of papers
+title: List of papers
 nav_order: 1
 ---
-# Table of papers
+# List of papers
+
+Following is a list of the papers, presented here on a single page for easier navigation.
 
 1. [Meta out-of-context learning in neural networks](https://firstuserhere.github.io/outofcontextnotes/readings/originalpaper/)
 
