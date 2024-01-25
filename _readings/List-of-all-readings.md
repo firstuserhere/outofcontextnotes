@@ -3,8 +3,10 @@ layout: default
 title: Table of papers
 nav_order: 1
 ---
+# Table of papers
 
 1. [Meta out-of-context learning in neural networks](https://firstuserhere.github.io/outofcontextnotes/readings/originalpaper/)
+
 
 2. [Tell, don’t show - Declarative facts influence how LLMs generalize](https://firstuserhere.github.io/outofcontextnotes/readings/declarativefacts/)
 
