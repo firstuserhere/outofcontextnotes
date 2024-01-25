@@ -17,4 +17,4 @@ If you're interested in the person who created this website (hi mom!), you can v
 
 ----
 
-[^1]: This project was a team project done during the AI safety camp. You can see my teammates here: [meta-learning project website](https://firstuserhere.github.io/metalearning)
+[^1]: This project was a team project done during the AI safety camp. You can see my teammates here: [about the team](https://firstuserhere.github.io/metalearning/about)
