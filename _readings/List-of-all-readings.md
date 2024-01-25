@@ -1,6 +1,6 @@
 ---
 layout: default
-title: List of all the related papers and references 
+title: Table of papers
 nav_order: 1
 ---
 
@@ -9,3 +9,4 @@ nav_order: 1
 2. [Tell, don’t show - Declarative facts influence how LLMs generalize](https://firstuserhere.github.io/outofcontextnotes/readings/declarativefacts/)
 
 3. [Why can GPT learn in-context? Language Models Secretly Perform Gradient Descent as Meta-Optimizers](https://firstuserhere.github.io/outofcontextnotes/readings/ICLmechanism/)
+
